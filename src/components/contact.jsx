@@ -20,11 +20,10 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
+  
     
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm("service_qwd7f1q", "template_tu7f8am", e.target, "Pr-4H4xBr6MljTcGR")
       .then(
         (result) => {
           console.log(result.text);
@@ -49,8 +48,8 @@ export const Contact = (props) => {
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
-                <div className="row">
-                  <div className="col-md-6">
+                <div className="">
+                  <div className="">
                     <div className="form-group">
                       <input
                         type="text"
@@ -64,7 +63,7 @@ export const Contact = (props) => {
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="">
                     <div className="form-group">
                       <input
                         type="email"
@@ -84,7 +83,7 @@ export const Contact = (props) => {
                     name="message"
                     id="message"
                     className="form-control"
-                    rows="4"
+                    rows="5"
                     placeholder="Message"
                     required
                     onChange={handleChange}
@@ -124,8 +123,16 @@ export const Contact = (props) => {
                 {props.data ? props.data.email : "loading"}
               </p>
             </div>
+            <div className="contact-item">
+              <p>
+                <span>
+                  <i className="fa fa-file"></i> Post
+                </span>{" "}
+                {props.data ? props.data.post : "loading"}
+              </p>
+            </div>
           </div>
-          <div className="col-md-12">
+          {/* <div className="col-md-12">
             <div className="row">
               <div className="social">
                 <ul>
@@ -147,16 +154,13 @@ export const Contact = (props) => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
+            &copy; 2025 ONSPOT LOGISTCS LTD. All Rights Reserved.
           </p>
         </div>
       </div>

@@ -7,8 +7,10 @@ export const Services = (props) => {
         <div className="section-title">
           <h2>Our Services</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            At Onspot Logistics, we provide seamless, reliable, and efficient
+            logistics solutions tailored to meet your business needs. From
+            freight and warehousing to last-mile delivery, we ensure speed,
+            security, and precision in every shipment.
           </p>
         </div>
         <div className="row">
